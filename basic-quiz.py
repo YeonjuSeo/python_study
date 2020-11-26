@@ -50,8 +50,8 @@
 # print("커피 당첨자 : {0}".format(winners[1:]))
 # print(" -- 축하합니다 --")
 
-#Quiz 5
-# my_solution
+# Quiz 5
+# my solution
 # from random import *
 # cnt=0
 # for i in range(1,51):
@@ -64,8 +64,8 @@
 #         print("[ ] {0}번째 손님 (소요시간 : {1})".format(i,num))
 # print("총 탑승 승객 : {0} 분".format(cnt))
 
-#Quiz 6
-# my_solution
+# Quiz 6
+# my solution
 # def std_weight(height,gender):
 #     if(gender == "남자"):
 #         std_w = round(height*height*22/10000,2)
@@ -75,7 +75,7 @@
 
 # std_weight(175,"남자")
 
-#solution in lecture
+# solution in lecture
 # def std_weight(height,gender): # 키 m 단위 (실수), 성별 "남자"/"여자"
 #     if(gender=="남자"):
 #         return height*height*22
@@ -85,4 +85,21 @@
 # height = 175 # cm 단위
 # gender = "남자"
 # weight = round(std_weight(height / 100,gender),2)
-# print("키 {0}cm {1}의 표준 체중은 {2}kg 입니다." .format(height,gender,weight))    
+# print("키 {0}cm {1}의 표준 체중은 {2}kg 입니다." .format(height,gender,weight))   
+
+# Quiz 7 
+# my solution__not solved
+# for i in range (1,51):
+#     with open("{0}주차.txt","w",encoding="utf8" .format(i)) as report_file:
+#         report_file.write("- {0} 주차 주간보고 -\n" .format(i))
+#         report_file.write("부서 :\n")
+#         report_file.write("이름 :\n")
+#         report_file.write("업무 요약 :")
+
+# solution in lecture
+for i in range(1,51):
+    with open(str(i)+"주차.txt","w",encoding="utf8") as report_file:
+        report_file.write("- {0} 주차 주간보고 -" .format(i))
+        report_file.write("\n부서 :")
+        report_file.write("\n이름 :")
+        report_file.write("\n업무 요약 :")
